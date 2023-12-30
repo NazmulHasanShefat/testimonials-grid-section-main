@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+}
+:root{
+   --color: #733FC8;
+   --box2: #49556B;
+   --box-5: hsl(217, 19%, 35%);
+   --Verydarkblackishblue: hsl(219, 29%, 14%);
+   --White: hsl(0, 0%, 100%);
+   --Lightgray: hsl(0, 0%, 81%);
+   --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+.grid-main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--Lightgrayishblue);
+}
+.wrap-grid-content{
+    height: 500px;
+    width: 75%;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:10px;
+    background-color:var(--Lightgrayishblue);
+}
+/* box 1 start */
+.testmonial-1:nth-child(1){
+    background-color:var(--color);
+    grid-column-start:1;
+    grid-column-end:3;
+    border-radius:10px;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-size:31% 38%;
+    background-repeat:no-repeat;
+    background-position-x: right;
+}
+.parson-image-conainer{
+    height: 45px;
+    width: 100%;
+}
+/* start parson section */
+.parson-ditail{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.parson-img{
+    height: 30px;
+    width: 30px;
+    border-radius:50%;
+    margin-right:20px;
+}
+.parson-name{
+    color:#fff;
+}
+.parson-podobi{
+    color:#fff;
+    font-size: .7rem;
+    margin-bottom: 10px;
+}
+/* end parson section */
+/* start paragrap 1 contant */
+.paragrap-1-box-1{
+    color:#fff;
+    font-weight: bold;
+    height: 70px;
+    width: 100%;
+}
+.paragrap-2-box-1{
+    color:#fff;
+    height: 70px;
+    width: 100%;
+    font-size:.8rem;
+}
+/* end paragrap 1 contant */
+/* box 1 end */
+
+.testmonial-1:nth-child(2){
+    background-color:var(--box2);
+    border-radius:10px;
+}
+.parson-ditail-2{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.parson-image-2{
+    height: 30px;
+    width: 50%;
+}
+.paragrap-2-box-2{
+    height: 70px;
+    width: 100%;
+    font-size: .8rem;
+    color:#fff;
+}
+/* box 3 */
+.testmonial-1:nth-child(3){
+    background-color:var(--White);
+    border-radius:10px;
+    grid-column-start:4;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+.parson-ditail-3{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.parson-image-3{
+    height: 40px;
+}
+.parson-name-box-white{
+    color:black;
+}
+.paragrap-1-box-3{
+    height: 85px;
+    width: 100%;
+    font-weight: bold;
+    font-size:1.3rem;
+}
+.paragrap-2-box-3{
+    font-size:.8rem;
+}
+
+/* end box 3 */
+.testmonial-1:nth-child(4){
+    background-color:var(--White);
+    border-radius:10px;
+}
+.paragrap-1-box-4{
+    height: 50px;
+    width: 100%;
+}
+.paragrap-1-box-4{
+    font-size: .8rem;
+    height: 45px;
+    width:100%;
+}
+/* end box 4 */
+.testmonial-1:nth-child(5){
+    background-color:var(--box-5);
+    border-radius:10px;
+    grid-column-start:2;
+    grid-column-end:4;
+}
+.parson-image-5{
+    height: 50px;
+    width:100%;
+}
+.parson-name-5{
+    color:#fff;
+}
+.parson-podobi-6{
+    color:#fff;
+}
+/* paragrap */
+.paragrap-1-box-5{
+    color:var(--White);
+    height: 65px;
+    width: 100%;
+}
+.paragrap-2-box-5{
+    color:var(--White);
+    width: 100%;
+    font-size:.8rem;
+    height:60px;
+}
+.testmonial-1{
+    padding:20px;
+}
+@media screen and (max-width:768px) {
+    /* .testmonial-1:nth-child(1){
+        grid-column-start:1;
+        grid-column-end:5;
+    } */
+    .paragrap-1-box-1 {
+        color: #fff;
+        font-weight: bold;
+        height: 112px;
+        width: 100%;
+    }
+    .paragrap-2-box-1 {
+        color: #fff;
+        height: 163px;
+        width: 100%;
+        font-size: .8rem;
+    }
+    .parson-ditail {
+        width: 68%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    /* .testmonial-1:nth-child(2){
+        grid-column-start:1;
+        grid-column-end:5;
+    }
+    .testmonial-1:nth-child(3){
+       grid-column-start:1;
+       grid-column-end:5;
+    }
+    .testmonial-1:nth-child(4){
+       grid-column-start:1;
+       grid-column-end:5;
+    } */
+    /* box 5 start  */
+    .paragrap-1-box-5 {
+        color: var(--White);
+        height: 114px;
+        width: 100%;
+    }
+    .paragrap-2-box-5 {
+        color: var(--White);
+        width: 100%;
+        font-size: .8rem;
+        height: 117px;
+    }
+    /* end box 5 */
+    .wrap-grid-content{
+        width: 90%;
+        height: max-content;
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-main-container{
+        width: 100%;
+        height: max-content;
+    }
+}
